@@ -16,6 +16,6 @@ jobs:
           node-version: 12.x
       # ISO Langusge Codes: https://cloud.google.com/translate/docs/languages
       - name: Readme Translate
-        uses: InProgres/translate-readme@v2.1
+        uses: InProgres/translate-readme@v2.3
         with:
           LANG: '["zh-CN","zh-TW","hi","ar","fr","ru","uk"]'

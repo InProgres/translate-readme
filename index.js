@@ -67,10 +67,12 @@ async function commitChanges() {
   console.log('pushed');
 }
 
-(async () => {
+(async function translateReadme() {
   try {
+    console.log(LANG);
+    console.log(langs);
     for (const lang of langs) {
-      console.log(lan);
+      console.log(lang);
       await writeToFile(lang);
     }
     await commitChanges();
