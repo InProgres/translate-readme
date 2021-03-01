@@ -31,6 +31,7 @@ const readmeAST = toAst(readme);
 console.log('AST CREATED AND READ');
 
 async function writeToFile(lang) {
+  console.log(lang);
   let originalText = [];
 
   visit(readmeAST, async node => {
