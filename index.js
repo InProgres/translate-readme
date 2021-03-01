@@ -21,7 +21,10 @@ const mainDir = '.';
 let README = readdirSync(mainDir).includes('readme.md')
   ? 'readme.md'
   : 'README.md';
-const langs = JSON.parse(core.getInput('LANG')) || ['zh-CN'];
+
+const LANG = core.getInput('LANG');
+console.log(LANG);
+const langs = JSON.parse(LANG) || ['zh-CN'];
 const readme = readFileSync(join(mainDir, README), { encoding: 'utf8' });
 const readmeAST = toAst(readme);
 console.log('AST CREATED AND READ');
