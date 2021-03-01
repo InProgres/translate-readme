@@ -25,6 +25,7 @@ let README = readdirSync(mainDir).includes('readme.md')
 const LANG = core.getInput('LANG');
 console.log(LANG);
 const langs = JSON.parse(LANG) || ['zh-CN'];
+console.log(langs);
 const readme = readFileSync(join(mainDir, README), { encoding: 'utf8' });
 const readmeAST = toAst(readme);
 console.log('AST CREATED AND READ');
@@ -69,11 +70,12 @@ async function commitChanges() {
 (async function translateReadme() {
   try {
     for (const lang of langs) {
+      console.log(lang);
       await writeToFile(lang);
     }
     await commitChanges();
     console.log('Done');
   } catch (error) {
-    throw new Error(error);
+    console.error(error);
   }
 })();
