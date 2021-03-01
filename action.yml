@@ -4,9 +4,9 @@ description: Translate the Readme to another language
 
 inputs:
   LANG:
-    description: 'The Language you want to translate to'
+    description: 'The Language you want to translate to in JSON format'
     required: true
-    default: ['ru']
+    default: "['ru', 'uk']"
 
 runs:
   using: 'node12'
