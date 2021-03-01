@@ -3,7 +3,7 @@
 ## Latin Vulgate README
 
 -   [anglicus](README.md)
--   [Simplified Chinese](README.zh-CN.md)
+-   [简体中文](README.zh-CN.md)
 -   [Traditional Chinese](README.zh-TW.md)
 -   [Hibernica](README.hi.md)
 -   [Gallica](README.fr.md)
@@ -58,7 +58,7 @@ _A ad submission[NSW: GitHub actiones pro patefacio radix!](https://dev.to/devte
             with:
               LANG: fr
 
-## configurationis
+## Configuration
 
 ### options
 
