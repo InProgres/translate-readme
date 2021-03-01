@@ -70,7 +70,7 @@ async function commitChanges() {
 (async function translateReadme() {
   try {
     for (const lang of langs) {
-      console.log(lang);
+      console.log(lan);
       await writeToFile(lang);
     }
     await commitChanges();
