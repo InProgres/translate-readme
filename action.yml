@@ -5,8 +5,8 @@ description: Translate the Readme to another language
 inputs:
   LANG:
     description: 'The Language you want to translate to'
-    required: false
-    default: 'zh-CN'
+    required: true
+    default: ['ru']
 
 runs:
   using: 'node12'
