@@ -18,4 +18,4 @@ jobs:
       - name: Readme Translate
         uses: InProgres/translate-readme@v2.3
         with:
-          LANG: '["zh-CN","zh-TW","hi","ar","fr","ru","uk"]'
+          LANG: "['zh-CN','zh-TW','hi','ar','fr','ru','uk']"
