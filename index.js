@@ -67,7 +67,7 @@ async function commitChanges() {
   console.log('pushed');
 }
 
-(async function translateReadme() {
+(async () => {
   try {
     for (const lang of langs) {
       console.log(lan);
